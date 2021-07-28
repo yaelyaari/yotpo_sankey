@@ -1,0 +1,190 @@
+<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 4000; height: 1000p;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]})
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Count');
+    data.addRows([
+    ['Self service flow (clicks:1)','',1]
+['Refer a client (clicks:5)','',26]
+['Refer a client (clicks:7)','',1]
+['Refer a client (clicks:9)','',1]
+['Refer a client (clicks:6)','',1]
+['Refer a client (clicks:19)','',1]
+['Refer a client (clicks:12)','',1]
+['Refer a client (clicks:13)','',1]
+['Refer a client (clicks:16)','',1]
+['What next (clicks:4)','end',19]
+['Schedule time (general) (clicks:6)','url',105]
+['Self service flow (clicks:6)','end',24]
+['Platform overview (clicks:4)','end',1]
+['Self service flow (clicks:1)','url',6]
+['Self service flow (clicks:1)','end',1]
+['Self service flow (clicks:2)','end',1]
+['Self service flow (clicks:7)','end',11]
+['Schedule time (client referral) (clicks:6)','url',10]
+['Self service flow (clicks:8)','end',3]
+['Schedule time (general) (clicks:8)','url',4]
+['Schedule time (general) (clicks:7)','url',12]
+['Schedule time (client referral) (clicks:7)','url',1]
+['Schedule time (general) (clicks:10)','url',4]
+['Back (clicks:6)','end',5]
+['Self service flow (clicks:9)','end',1]
+['Self service flow (clicks:10)','end',1]
+['Schedule time (general) (clicks:15)','url',1]
+['Self service flow (clicks:20)','end',1]
+['Schedule time (general) (clicks:11)','url',1]
+['Back (clicks:12)','end',1]
+['Self service flow (clicks:21)','end',1]
+['What next (clicks:5)','end',2]
+['Schedule time (client referral) (clicks:8)','url',2]
+['Self service flow (clicks:13)','end',1]
+['Self service flow (clicks:14)','end',1]
+['Back (clicks:21)','end',1]
+['Services (clicks:1)','',251]
+['Platforms (clicks:1)','',2]
+['Self service flow (clicks:1)','',17]
+['Services (clicks:2)','',11]
+['Services (clicks:3)','',3]
+['# of clients (clicks:4)','',1]
+['Services (clicks:7)','',1]
+['Services (clicks:6)','',1]
+['Services (clicks:13)','',1]
+['# of clients (clicks:11)','',1]
+['Services (clicks:8)','',1]
+['Platforms (clicks:2)','',2]
+['Platforms (clicks:5)','',1]
+['Platforms (clicks:12)','',1]
+['# of clients (clicks:3)','',202]
+['# of clients (clicks:4)','',13]
+['What next (clicks:3)','',2]
+['Self service flow (clicks:1)','',12]
+['Self service flow (clicks:1)','',1]
+['Partner benefits (clicks:5)','',8]
+['Partner benefits (clicks:7)','',3]
+['# of clients (clicks:5)','',3]
+['Refer a client (clicks:7)','',1]
+['Platform overview (clicks:5)','',2]
+['# of clients (clicks:8)','',1]
+['Refer a client (clicks:7)','',2]
+['Refer a client (clicks:9)','',1]
+['Platform overview (clicks:9)','',1]
+['# of clients (clicks:9)','',1]
+['Refer a client (clicks:11)','',1]
+['Partner benefits (clicks:8)','',1]
+['Refer a client (clicks:12)','',1]
+['Partner benefits (clicks:17)','',1]
+['Platform overview (clicks:5)','',1]
+['# of clients (clicks:10)','',1]
+['Refer a client (clicks:5)','',2]
+['Partner benefits (clicks:7)','',1]
+['Platform overview (clicks:11)','',1]
+['Refer a client (clicks:18)','',1]
+['Platform overview (clicks:20)','',1]
+['What next (clicks:4)','',100]
+['Self service flow (clicks:1)','',6]
+['What next (clicks:6)','',3]
+['What next (clicks:8)','',1]
+['What next (clicks:5)','',9]
+['What next (clicks:10)','',1]
+['What next (clicks:9)','',1]
+['Schedule time (general) (clicks:7)','',1]
+['Back (clicks:10)','',1]
+['Back (clicks:6)','',3]
+['Schedule time (general) (clicks:6)','',2]
+['Schedule time (general) (clicks:16)','',1]
+['What next (clicks:13)','',1]
+['Back (clicks:8)','',1]
+['Partner benefits (clicks:5)','',89]
+['Platform overview (clicks:5)','',30]
+['Back (clicks:5)','',1]
+['Self service flow (clicks:1)','',8]
+['Platform overview (clicks:6)','',3]
+['Partner benefits (clicks:7)','',3]
+['Partner benefits (clicks:9)','',2]
+['Platform overview (clicks:7)','',2]
+['Partner benefits (clicks:6)','',8]
+['Partner benefits (clicks:10)','',1]
+['Platform overview (clicks:9)','',3]
+['Partner benefits (clicks:11)','',1]
+['Partner benefits (clicks:14)','',1]
+['What next (clicks:4)','',43]
+['Self service flow (clicks:1)','',4]
+['Self service flow (clicks:1)','',2]
+['What next (clicks:4)','',35]
+['What next (clicks:5)','',2]
+['Platform overview (clicks:4)','',1]
+['What next (clicks:5)','',3]
+['Schedule time (client referral) (clicks:6)','',2]
+['Self service flow (clicks:6)','',1]
+['Back (clicks:6)','',2]
+['Self service flow (clicks:8)','',1]
+['Schedule time (general) (clicks:8)','',1]
+['Self service flow (clicks:10)','',1]
+['What next (clicks:9)','',1]
+['Back (clicks:8)','',2]
+['What next (clicks:8)','',1]
+['Self service flow (clicks:11)','',1]
+['What next (clicks:18)','',1]
+['What next (clicks:11)','',1]
+['Back (clicks:6)','',2]
+['What next (clicks:8)','',1]
+['Self service flow (clicks:15)','',1]
+['What next (clicks:12)','',1]
+['Self service flow (clicks:17)','',1]
+['Back (clicks:19)','',1]
+['Schedule time (general) (clicks:10)','',1]
+['Platforms (clicks:2)','',225]
+['Platforms (clicks:3)','',14]
+['Self service flow (clicks:1)','',14]
+['# of clients (clicks:2)','',2]
+['Self service flow (clicks:2)','',2]
+['Platforms (clicks:4)','',3]
+['What next (clicks:4)','',1]
+['Platforms (clicks:8)','',1]
+['Platforms (clicks:7)','',1]
+['What next (clicks:10)','',1]
+['Platforms (clicks:9)','',1]
+['Refer a client (clicks:6)','',1]
+['Self service flow (clicks:1)','',1]
+['Refer a client (clicks:5)','',13]
+['Refer a client (clicks:7)','',1]
+]);
+
+    // Set chart options
+    var options = {
+      width: 40000,
+      sankey: { node: { nodePadding: 400 } },
+    };
+    
+    // Set colors
+    var colors = ["32cbff","00a5e0","89a1ef","ef9cda","fecef1","000000","2f4550","ffede1"];
+
+    var options = {
+      height: 2000,
+      sankey: {
+        node: {
+          colors: colors
+        },
+        link: {
+          colorMode: 'gradient',
+          colors: colors
+        }
+      }
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
